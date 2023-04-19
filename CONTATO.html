@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário HTML</title>
+</head>
+<body style="margin:0px">
+
+   <diV>
+          <header style="display:flex; justify-content:center; background-color:rgb(207, 255, 205)">
+              <h1> HTML <sup> Linguagem de Marcação de Hipertexto. </sup></h1>
+          </header>
+
+          <div style="display: flex; justify-content: center; background-color:rgb(184, 241, 182)">
+              <h2> Tutoriais para iniciantes. </h2>
+          </div>
+
+          <nav style="margin: 0px" >
+
+              <ul
+                  style="list-style: none; display: flex;justify-content: space-between;background-color: rgb(195, 238, 255)">
+                  <li style="flex-grow: 1;"><a href="index.html" style=" text-decoration: none;">Inicio</a></li>
+                  <li style="flex-grow: 1;"><a href="index.html#HTML" style="text-decoration: none;">HTML</a></li>
+                  <li style="flex-grow: 1;"><a href="index.html#tabela" style="text-decoration: none;">Tabela e Lista</a></li>
+                  <li style="flex-grow: 1;"><a href="index.html#sobre" style="text-decoration: none">O que é HTML, CSS e JS</a></li>
+                  <li style="flex-grow: 1;"><a href="index.html#rodape" style="text-decoration: none">Links</a></li>
+                  <li style="flex-grow: 1;"><a href="CONTATO.html" style="text-decoration: none">Contato</a></li>
+              </ul>
+          </nav>
+
+          <section style="display:flex; justify-content:center"> 
+
+               <form method="post" action="OBRIGADO.html"> 
+
+                  <div style="margin: 7px;"> 
+                     <label> Nome </label>
+                     <input type="text" name="nome" required>
+                  </div> 
+                  
+                  <div style="margin: 7px;"> 
+                     <label> E-mail </label>
+                     <input type="email" name="email" required>
+                  </div> 
+                     
+                  <div style="margin: 7px;" > 
+                     <label> Telefone </label>
+                     <input type="tel" name="telefone" required>
+                  </div> 
+
+                  <div style="margin: 7px;">
+                     <label> Assunto </label>
+                     <select name="select" required>
+                           <option value="valor1"> HTML </option>
+                           <option value="valor2" selected> CSS  </option>
+                           <option value="valor3"> JavaScript </option>
+                     </select>
+                  </div> 
+
+                  <div style="margin: 7px;">
+                     <label>Mensagem</label>
+                     <textarea name="texto" rows="5" cols="45" required> </textarea>
+                  </div>
+         
+         
+                  <div style="margin: 7px;">
+                     <input type="radio" name="opção" value="opção 1" required>
+                     <label> Feedback </label>
+         
+                     <input type="radio" name="opção" value="opção 2" required>
+                     <label> Dúvida </label>
+         
+                     <input type="radio" name="opção" value="opção 3" required>
+                     <label> Sugestão </label>
+                  </div>
+
+                  <div style="margin: 7px;">
+                     <label for="vol"> Nível de satisfação :</label>
+                     <input type="range" name="volume" min="0" max="50" required>
+                  </div>
+
+
+                  <div style="margin: 7px;">
+                     <label> Data de envio: </label>
+                     <input type="date" name="data" required>
+                  </div>
+
+                  <div style="margin: 7px;">
+                     <input type="checkbox" name="checkbox" value="concordo" required>
+                     <label> Concordo com os termos de Privacidade do site.</label> <br>
+                  </div>
+         
+                  <div style="margin: 7px;"> 
+                     <input type="submit" value="Enviar" style="background-color: rgb(59, 255, 59);"> 
+                     <input type="reset" value="Apagar" style="background-color: rgb(255, 54, 54);">
+                  </div> 
+               </form>
+            </section>   
+
+          <section style="padding-top: 10px"> 
+
+              <footer id="rodape" style="padding: auto"> 
+                  <div style="display: flex; align-items: baseline; column-gap: 4px;">
+
+                      <section style="background-color: rgb(255, 165, 81); width: 25%">
+                          <p> <h3>  Sobre </h3> </p> 
+                          <ul>
+                              <li> <a href="index.html" style="text-decoration:underline;"> Topo da Página</a></li>
+                              <li> <a href="CONTATO.html" style="text-decoration:underline;"target="_blank" > Fale conosco</a></li>
+                              <li> <a style="color:blue" target="_blank"> Politica de Privacidade </a></li>
+                          </ul>
+                      </section>
+
+                      <section style="background-color:rgb(255, 183, 115); width: 25%">
+                          <p> <h3> Referências </h3> </p>
+                          <ul>
+                              <li> <a href="https://youtu.be/4dQtz1PpY9A" style="text-decoration: underline;" target="_blank"> Dicionário do Programador</a> </li>
+                              <li> <a href="https://tecnoblog.net/responde/o-que-e-html-guia-para-iniciantes/" style="text-decoration: underline;" target="_blank"> Tecnoblog</a> </li>
+                              <li> <a href="https://www.opservices.com.br/protocolos-de-rede/" style="text-decoration: underline;"target="_blank" > Opservices</a> </li>
+                          </ul>
+                      </section>
+
+                      <section style="background-color: rgb(255, 165, 81); width: 25%">
+                          <p> <h3> Tutoriais </h3> </p>
+                          <ul>
+                              <li> <a href="https://youtu.be/1LJGQb_pn6k" style="text-decoration: underline;" target="_blank"> Curso HTML - YouTube</a> </li>
+                              <li> <a href="https://youtu.be/vwbegraDXD8" style="text-decoration: underline;" target="_blank"> Curso CSS - YouTube</a> </li>
+                              <li> <a href="https://youtu.be/hyMCPZNLXps" style="text-decoration: underline;" target="_blank"> Curso JavaScript - YouTube</a> </li>
+                          </ul>
+                      </section>
+
+                      <section style="background-color:rgb(255, 183, 115); width: 25%">
+                          <p> <h3> Outros links </h3> </p>
+                          <ul>
+                              <li> <a href="https://terminalroot.com.br/2021/05/10-dicas-de-html-que-provavelmente-voce-nao-sabia.html" style="text-decoration: underline;" target="_blank"> Dicas</a> </li>
+                              <li> <a href="https://www.devmedia.com.br/html-basico-codigos-html/16596" style="text-decoration: underline;" target="_blank"> Básico </a> </li>
+                              <li> <a href="https://linktr.ee/profdanielbrandao" style="text-decoration: underline;" target="_blank"> Contato - Professor</a> </li>
+                          </ul>
+                      </section>
+                  </div>
+                  <div style="width: 100%; text-align: center; background-color: rgb(252, 226, 193);">
+                     <p> Júlia Fabrício &copy; - Direitos reservados - Sistemas para Internet.
+                     </p>
+                 </div>
+              </footer>
+          </section>
+   </diV>
+</body>
+</html>
